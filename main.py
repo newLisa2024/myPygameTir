@@ -12,8 +12,8 @@ icon = pygame.image.load("img/e6eda1.jpg")
 pygame.display.set_icon(icon)
 
 target_img = pygame.image.load("img/target1.png")
-explosion_img = pygame.image.load("img/vzryiv.png")  # Загрузка картинки взрыва
-# explosion_sound = pygame.mixer.Sound("sound/vxriv.wav")  # Загрузка звука взрыва
+explosion_img = pygame.image.load("img/vzryiv.png")
+explosion_sound = pygame.mixer.Sound("sounds/vxriv.wav")
 target_width = 80
 target_height = 80
 
@@ -41,7 +41,7 @@ while running:
         if event.type == pygame.MOUSEBUTTONDOWN:
             mouse_x, mouse_y = pygame.mouse.get_pos()
             if target_x < mouse_x < target_x + target_width and target_y < mouse_y < target_y + target_height:
-               # explosion_sound.play()
+                explosion_sound.play()
                 last_explosion_time = current_time
                 target_x = random.randint(0, SCREEN_WIDTH - target_width)
                 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
