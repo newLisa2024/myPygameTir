@@ -12,7 +12,7 @@ icon = pygame.image.load("img/e6eda1.jpg")
 pygame.display.set_icon(icon)
 
 target_img = pygame.image.load("img/target1.png")
-explosion_img = pygame.image.load("img/klipartz.com(1).png")  # Загрузка картинки взрыва
+explosion_img = pygame.image.load("img/vzryiv.png")  # Загрузка картинки взрыва
 # explosion_sound = pygame.mixer.Sound("sound/vxriv.wav")  # Загрузка звука взрыва
 target_width = 80
 target_height = 80
